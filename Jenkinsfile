@@ -6,7 +6,7 @@ pipeline {
         DOCKER_CREDENTIALS = credentials('docker-hub-credentials')
         DOCKER_REGISTRY = 'docker.io'
         IMAGE_NAME = 'argwims007/Task2'
-        IMAGE_TAG = "${GIT_COMMIT:0:7}" 
+        IMAGE_TAG = "${BUILD_NUMBER}"
     }
     
     options {
