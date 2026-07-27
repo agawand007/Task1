@@ -5,7 +5,7 @@ pipeline {
         // Docker Hub credentials (configured in Jenkins)
         DOCKER_CREDENTIALS = credentials('docker-hub-credentials')
         DOCKER_REGISTRY = 'docker.io'
-        IMAGE_NAME = 'argwims007/Task2'
+        IMAGE_NAME = 'argwims007/task2'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
     
